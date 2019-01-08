@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Vue.js playground</title>
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i|IBM+Plex+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div id="app">
+        <div class="component-library">
+            <app-component-list>
+                <app-component-item
+                    v-for="component in components"
+                    :component="component"
+                    :key="component.name"
+                ></app-component-item>
+            </app-component-list>
+
+            <app-component-view
+                :component="currentComponent"
+            ></app-component-view>
+        </div>
+    </div>
+    <!-- !! -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

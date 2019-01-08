@@ -1,0 +1,17 @@
+{
+  "name": "vue-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "skaflock",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-file-contents-to-json": "^0.2.2",
+    "gulp-json-tree": "^0.1.0"
+  }
+}

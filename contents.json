@@ -1,0 +1,17 @@
+{
+  "": {
+    "button-clone": {
+      "button-clone.css": "button {\r\n    margin: 0;\r\n    padding: 0;\r\n    color: var(--c-button-text);\r\n    background-color: var(--c-button-bg);\r\n}\r\n",
+      "button-clone.html": "<button class=\"btn js-btn\" type=\"button\">I'm a button</button>\r\n",
+      "button-clone.js": "console.log('button loaded');\r\n",
+      "component.json": "{\r\n    \"name\": \"button-clone\",\r\n    \"template\": \"button-clone.html\",\r\n    \"styles\": [\r\n        \"button-clone.css\"\r\n    ],\r\n    \"scripts\": [\r\n        \"button-clone.js\"\r\n    ],\r\n    \"dependencies\": []\r\n}\r\n"
+    },
+    "button": {
+      "button.css": ".btn {\r\n    margin: 0;\r\n    padding: calc(var(--unit) / 2) var(--unit);\r\n    color: var(--c-btn-text);\r\n    background-color: var(--c-btn-bg);\r\n    border: none;\r\n    border-radius: calc(var(--unit) / 2);\r\n    cursor: pointer;\r\n}\r\n\r\n.btn:hover {\r\n    background-color: var(--c-btn-bg-hover)\r\n}\r\n",
+      "button.html": "<button class=\"btn js-btn\" type=\"button\">I'm a button</button>\r\n",
+      "button.js": "(function () {\r\n    'use strict';\r\n\r\n    $(document).on('click', '.js-btn', function () {\r\n        console.log('button has been clicked');\r\n        $(this).toggleClass('btn--accent');\r\n    });\r\n} ());\r\n",
+      "component.json": "{\r\n    \"name\": \"button\",\r\n    \"template\": \"button.html\",\r\n    \"styles\": [\r\n        \"button.css\",\r\n        \"modifiers.css\"\r\n    ],\r\n    \"scripts\": [\r\n        \"button.js\"\r\n    ],\r\n    \"dependencies\": []\r\n}\r\n",
+      "modifiers.css": ".btn--accent {\r\n    color: var(--c-light);\r\n    background-color: var(--c-accent);\r\n}\r\n\r\n.btn--accent:hover {\r\n    color: var(--c-light-hover);\r\n    background-color: var(--c-accent-hover);\r\n}\r\n"
+    }
+  }
+}

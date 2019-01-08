@@ -1,0 +1,12 @@
+{
+    "name": "button",
+    "template": "button.html",
+    "styles": [
+        "button.css",
+        "modifiers.css"
+    ],
+    "scripts": [
+        "button.js"
+    ],
+    "dependencies": []
+}

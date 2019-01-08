@@ -1,0 +1,21 @@
+:root {
+    /* Common */
+    --unit: 8px;
+
+    /* Fonts */
+    --font-text: 'IBM Plex Sans', sans-serif;
+    --font-code: 'IBM Plex Mono', monospace;
+
+    /* Colors */
+    --c-light: #fff;
+    --c-light-hover: #ccc;
+    --c-gray: #444;
+    --c-btn-bg: #ccc;
+    --c-btn-bg-hover: #aaa;
+    --c-btn-text: #000;
+    --c-accent: #e00;
+    --c-accent-hover: #c00;
+
+    /* Layout */
+    --list-width: 320px;
+}

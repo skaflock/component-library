@@ -1,0 +1,11 @@
+{
+    "name": "button-clone",
+    "template": "button-clone.html",
+    "styles": [
+        "button-clone.css"
+    ],
+    "scripts": [
+        "button-clone.js"
+    ],
+    "dependencies": []
+}

@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text);
+}
+
+pre {
+    padding: calc(var(--unit) * 2);
+    color: var(--c-light);
+    background-color: var(--c-gray);
+}
+
+.component-library {
+    display: flex;
+    min-height: 100vh;
+}
+
+.component-list {
+    padding: calc(var(--unit) * 2);
+    width: var(--list-width);
+    color: #fff;
+    background-color: var(--c-gray);
+}
+
+.component-item {
+    margin-bottom: var(--unit);
+    cursor: pointer;
+}
+
+.component-item:hover {
+    color: var(--c-light-hover);
+}
+
+.component-view {
+    padding: calc(var(--unit) * 2);
+    width: calc(100% - var(--list-width));
+}
+
+.component-view__name {
+    margin-bottom: calc(var(--unit) * 2);
+}
