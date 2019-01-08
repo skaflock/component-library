@@ -20,6 +20,8 @@ gulp.task('jst', function (done) {
     done();
 });
 
+gulp.task('build', gulp.parallel('jst'));
+
 gulp.task('watch', function (done) {
     gulp.watch([
         'components/**/*.json'
@@ -28,7 +30,4 @@ gulp.task('watch', function (done) {
     done();
 });
 
-gulp.task('default', gulp.series(
-    gulp.parallel('jst'),
-    'watch'
-));
+gulp.task('default', gulp.series('build', 'watch'));
