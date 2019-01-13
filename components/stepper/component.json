@@ -1,0 +1,11 @@
+{
+    "name": "stepper",
+    "template": "stepper.html",
+    "styles": [
+        "stepper.css"
+    ],
+    "scripts": [
+        "stepper.js"
+    ],
+    "dependencies": []
+}

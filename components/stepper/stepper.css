@@ -1,0 +1,32 @@
+.stepper {
+    display: inline-flex;
+    align-items: center;
+    height: calc(var(--unit) * 4);
+    border: 1px solid var(--c-gray);
+}
+
+.stepper-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: calc(var(--unit) * 3);
+    height: 100%;
+    line-height: 1;
+    border: none;
+}
+
+.stepper-btn--increment::before {
+    content: '+';
+}
+
+.stepper-btn--decrement::before {
+    content: '-';
+}
+
+.stepper-input {
+    height: 100%;
+    text-align: center;
+    border: none;
+}
